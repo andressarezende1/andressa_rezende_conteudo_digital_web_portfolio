@@ -1,0 +1,151 @@
+#about {
+    background-color: #F0F0F0;
+}
+
+.title-about {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    height: auto;
+    padding: 20px;
+    gap: 120px;
+}
+
+.photo {
+    position: relative; 
+    background-image: url(/assets/img/photo.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 290px;
+    width: 18vw; 
+    overflow: hidden;
+}
+
+.photo:hover {
+    transform: scale(1.05);
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 40vw;
+    line-height: 1.5;
+    text-align: justify; 
+    gap: 10px;
+}
+
+.text h3 {
+    text-align: center;
+}
+
+.description p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw; 
+    margin: 0;
+}
+
+#chamada {
+    padding: 15px 20px;
+    width: 70%;
+    margin: 10px auto; 
+    border: 2px solid rgb(174, 146, 175); 
+    box-shadow: 0 8px 20px rgba(194, 160, 196, 0.5); 
+    border-radius: 25px;
+    background: linear-gradient(135deg, #f3e5f5, #e1bee7); 
+    color: #6607aa; 
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#chamada:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 12px 25px rgba(98, 32, 100, 0.6);
+}
+
+
+@media(max-width: 1024px) {
+    .about-container {
+        gap: 50px; 
+    }
+
+    .photo {
+        width: 25vw; 
+        height: 50vw; 
+    }
+
+    .text {
+        width: 45vw; 
+    }
+
+    .text h3 {
+        font-size: 28px; 
+    }
+
+    .description p {
+        width: 40vw; 
+        text-align: justify;
+    }
+}
+
+@media(max-width: 768px) {
+    .about-container {
+        gap: 30px;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .photo {
+        width: 60vw;
+        height: 50vw; 
+    }
+
+    .text {
+        width: 80vw; 
+        text-align: center;
+    }
+
+    .text h3 {
+        font-size: 24px; 
+    }
+
+    .description p {
+        width: 80vw; 
+    }
+}
+
+@media(max-width: 480px) {
+    .title-about {
+        font-size: 28px; 
+    }
+
+    .photo {
+        width: 80vw; 
+        height: 80vw;
+    }
+
+    .text {
+        width: 90vw;
+    }
+
+    .text h3 {
+        font-size: 20px; 
+    }
+
+    .description p {
+        width: 90vw; 
+    }
+}

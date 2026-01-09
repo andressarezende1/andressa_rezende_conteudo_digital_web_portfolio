@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Great+Vibes&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oxygen:wght@300;400;700&family=Prata&family=Quicksand:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rufina:wght@400;700&family=Viga&display=swap');
+
+@import url(./header.css);
+@import url(./animate.css);
+@import url(./section-about.css);
+@import url(./section-videos.css);
+@import url(./section-designs.css);
+@import url(./section-projects.css);
+@import url(./footer.css);
+
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #F0F0F0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*Estilização das Fontes*/
+span {
+    font-family: "Bebas Neue", serif;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+}
+
+p {
+    font-family: "Rufina", serif;
+    font-weight: 400;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.title h3 {
+    display: inline-block; 
+    border-top: 2px solid #9B59B6;
+    border-bottom: 2px solid #9B59B6;
+    padding: 5px 0; 
+    text-align: center;
+    font-weight: 800;
+}
+
+strong {
+    font-family: "Rufina", serif;
+    font-weight: 700;
+}
+
+/*Estilização dos Icones*/
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 22px;
+}
+
+.icons i {
+    color: #6A0DAD;
+    font-size: 28px;
+}
+
+.icons a:hover i {
+    color: #7f3d9b;
+}
+
+@media(max-width: 768px) {
+    .icons a {
+        font-size: 18px;
+    }
+}
+
+
+
+/* Estilização do botão de rolar para o topo */
+#scrollToTopButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    color: #9B59B6;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    cursor: pointer;
+    display: none; 
+    z-index: 1000; 
+    transition: opacity 0.3s ease;
+    }
+    
+#scrollToTopButton:hover {
+    background-color: #9B59B6;
+    color:  white ;
+    }
+    
+#scrollToTopButton:focus {
+    outline: none;
+    }
+
+@media(max-width: 768px) {
+    #scrollToTopButton {
+        bottom: 20px;
+        right: 40px;
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+}
+
