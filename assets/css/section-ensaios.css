@@ -1,12 +1,14 @@
 /* Estilo para o swiper (Carrossel de imagens) */
-.swiper-desing {
-    width: 100%;           
+/* Estilo exclusivo para o Swiper do Ensaio Gestante */
+.swiper-ensaios {
+    width: 80%;           
     max-width: 450px;    
     margin: auto 0;      
 }
 
-.swiper-desing .swiper-slide img {
-    width: 100%;                  
+.swiper-ensaios .swiper-slide img {
+    width: 100%;              
+    aspect-ratio: 3 / 4;      
     object-fit: cover;        
     border-radius: 8px;       
     display: block;           
@@ -14,8 +16,12 @@
 
 /* Responsividade */
 @media (max-width: 768px) {
-    .swiper-desing {
+    .swiper-ensaios {
         width: 95%;           
         max-width: 350px;
+    }
+
+    .swiper-ensaios .swiper-slide img {
+        aspect-ratio: 3 / 4;  
     }
 }

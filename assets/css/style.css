@@ -2,7 +2,9 @@
 
 @import url(./header.css);
 @import url(./animate.css);
+@import url(./sections.css);
 @import url(./section-about.css);
+@import url(./section-ensaios.css);
 @import url(./section-videos.css);
 @import url(./section-designs.css);
 @import url(./section-projects.css);
@@ -81,8 +83,6 @@ strong {
         font-size: 18px;
     }
 }
-
-
 
 /* Estilização do botão de rolar para o topo */
 #scrollToTopButton {

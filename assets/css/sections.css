@@ -1,0 +1,72 @@
+
+/* Estilo da section */
+
+#ensaios, #videos, #designs, #projects {
+    background-color: #F0F0F0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo dos cards*/
+.container-cards {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 80%; 
+    padding: 20px;
+    background-color: white;
+    gap: 20px;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .card{
+        width: 80vw; 
+        flex-direction: column;
+    }
+}
+
+/* Estilo para a descrição */
+
+.info, .info-video {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%;
+    line-height: 1.5;
+    text-align: left; 
+    text-align: justify;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.info h3 {
+    font-size: 1.5rem; 
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.p {
+    font-size: 16px;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .info {
+        width: 90%;  
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
